@@ -1,0 +1,8 @@
+.container-ejercicios {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 2rem;
+  width: 20rem;
+  height: 8rem;
+}
