@@ -1,6 +1,7 @@
 import React from "react";
 import { useEffect, useState } from "react";
 import Card from "./Card";
+import "./Cards.css";
 
 const Cards = () => {
   const [ejercicios, setEjercicios] = useState([]);
@@ -21,7 +22,11 @@ const Cards = () => {
     fetchData();
   }, []);
   return (
-    <div>
+    <div className="container">
+      <div className="titulo-general">
+        <p className="no-margin tt">Ejercicios</p>
+        <p className="no-margin">4</p>
+      </div>
       {ejercicios.map((ejercicios) => (
         <Card key={ejercicios.id} ejercicios={ejercicios} />
       ))}
